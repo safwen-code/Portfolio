@@ -19,13 +19,18 @@ const Devskills = (props) => {
     <div className="container  border border-dark p-1" id="devskills">
       <div className="border border-dark m-1">
         {' '}
-        <h2>Frontend Skills</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>Frontend Skills</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
-        <ul class="  list-group list-group-flush">
-          <li class=" list-group-item list-group-item-action">
-            <div className="row">
-              <div className="col-sm-6">html css sass</div>
-              <div className="col-sm-6">
+        <ul class="  list-group list-group-flush rounded">
+          <li
+            class=" list-group-item list-group-item-action"
+            style={{ backgroundColor: '#FDE2F3' }}
+          >
+            <div className="row ">
+              <div className="col-sm-6" style={{ fontFamily: 'cursive' }}>
+                html css sass
+              </div>
+              <div className="col-sm-6" style={{ marginTop: '6px' }}>
                 {' '}
                 <div
                   class="progress"
@@ -43,10 +48,15 @@ const Devskills = (props) => {
               </div>
             </div>
           </li>
-          <li class=" list-group-item list-group-item-action">
+          <li
+            class=" list-group-item list-group-item-action"
+            style={{ backgroundColor: '#FDE2F3' }}
+          >
             <div className="row">
-              <div className="col-sm-6">Bootstrap ReactStrap</div>
-              <div className="col-sm-6">
+              <div className="col-sm-6" style={{ fontFamily: 'cursive' }}>
+                Bootstrap ReactStrap
+              </div>
+              <div className="col-sm-6" style={{ marginTop: '6px' }}>
                 {' '}
                 <div
                   class="progress"
@@ -64,10 +74,15 @@ const Devskills = (props) => {
               </div>
             </div>
           </li>
-          <li class=" list-group-item list-group-item-action">
+          <li
+            class=" list-group-item list-group-item-action"
+            style={{ backgroundColor: '#FDE2F3' }}
+          >
             <div className="row">
-              <div className="col-sm-6">axios Ajax HttpRequest</div>
-              <div className="col-sm-6">
+              <div className="col-sm-6 " style={{ fontFamily: 'cursive' }}>
+                axios Ajax HttpRequest
+              </div>
+              <div className="col-sm-6" style={{ marginTop: '6px' }}>
                 {' '}
                 <div
                   class="progress"
@@ -88,7 +103,7 @@ const Devskills = (props) => {
         </ul>
       </div>
       <div className="border border-dark m-1">
-        <h2>Framework I use</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>Framework I use</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
         <div className="d-flex justify-content-around">
           <FaReact size="2rem" color="#1D267D" />
@@ -99,7 +114,7 @@ const Devskills = (props) => {
       </div>
       <div className="border border-dark m-1">
         {' '}
-        <h2>Backend</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>Backend</h2>
         <hr class="  border border-secondary border-2 opacity-100 w-50 ms-4"></hr>
         <div className="d-flex justify-content-around">
           <TbBrandJavascript size="2rem" color="#F9D949" />
@@ -111,7 +126,7 @@ const Devskills = (props) => {
         </div>
       </div>
       <div className="border border-dark m-1">
-        <h2>utils</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>Utils</h2>
         <hr class="  border border-secondary border-2 opacity-100 w-50 ms-4"></hr>
         <div
           id="carouselExample"
