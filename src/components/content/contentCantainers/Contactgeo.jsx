@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contactgeo = () => {
   return (
-    <div className="col-sm border border-dark mx-2 ">
+    <div className="col-sm  mx-2 ">
       <iframe
         width="100%"
         height="100%"

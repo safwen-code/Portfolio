@@ -16,9 +16,7 @@ const Contactvalidation = () => {
 
   const submiContact = (e) => {
     e.preventDefault()
-    console.log('contact', Contact)
-    console.log('contact ref', contactRef)
-    console.log(e.target)
+
     let test = emailjs
       .send('service_ctwp9zo', 'template_nf8js4z', Contact, 'MCWeJugFmMWwVfeiC')
       .then(
@@ -32,7 +30,7 @@ const Contactvalidation = () => {
     console.log(test)
   }
   return (
-    <div className="col-sm border border-primary ">
+    <div className="col-sm">
       <div className=" card text-dark bg-light  mt-3 ms-2 mx-2 mb-3">
         <h2 className="ms-2">Hire Me</h2>
         <p className="ms-2 lead">

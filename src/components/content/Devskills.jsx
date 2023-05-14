@@ -16,8 +16,8 @@ import uml from '../../images/uml.png'
 import wind from '../../images/wind.png'
 const Devskills = (props) => {
   return (
-    <div className="container  border border-dark p-1" id="devskills">
-      <div className="border border-dark m-1">
+    <div className="container   p-1" id="devskills">
+      <div className=" m-1">
         {' '}
         <h2 style={{ fontFamily: 'cursive' }}>Frontend Skills</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
@@ -102,7 +102,7 @@ const Devskills = (props) => {
           </li>
         </ul>
       </div>
-      <div className="border border-dark m-1">
+      <div className=" m-1">
         <h2 style={{ fontFamily: 'cursive' }}>Framework I use</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
         <div className="d-flex justify-content-around">
@@ -112,7 +112,7 @@ const Devskills = (props) => {
           <SiAngularjs size="2rem" color="#D21312" />
         </div>
       </div>
-      <div className="border border-dark m-1">
+      <div className=" m-1">
         {' '}
         <h2 style={{ fontFamily: 'cursive' }}>Backend</h2>
         <hr class="  border border-secondary border-2 opacity-100 w-50 ms-4"></hr>
@@ -125,7 +125,7 @@ const Devskills = (props) => {
           <SiPostgresql color="#3C486B" size="2rem" />
         </div>
       </div>
-      <div className="border border-dark m-1">
+      <div className=" m-1">
         <h2 style={{ fontFamily: 'cursive' }}>Utils</h2>
         <hr class="  border border-secondary border-2 opacity-100 w-50 ms-4"></hr>
         <div

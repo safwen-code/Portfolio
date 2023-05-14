@@ -3,18 +3,18 @@ import { connect } from 'react-redux'
 
 const Skillmain = () => {
   return (
-    <div className="container  m-2 border border-dark  " id="skills">
-      <div className="row m-1 border border-dark  ">
-        <div className="col-sm-6 col-md-6  border border-primary">
+    <div className="container  m-2   " id="skills">
+      <div className="row m-1   ">
+        <div className="col-sm-6 col-md-6  ">
           <h2
             className="mb-2  "
             style={{ color: '#191825', fontFamily: 'cursive' }}
           >
             Education{' '}
           </h2>
-          <div className="row border border-dark d-flex flex-column align-items-center pt-1 pb-1">
+          <div className="row  d-flex flex-column align-items-center pt-1 pb-1">
             <div
-              className=" col-sm-6 col-md-6 border border-dark mb-2"
+              className=" col-sm-6 col-md-6  mb-2"
               style={{ width: '380px' }}
             >
               <div class="card">
@@ -28,7 +28,7 @@ const Skillmain = () => {
               </div>
             </div>
             <div
-              className=" col-sm-6 col-md-6 border border-dark mb-2"
+              className=" col-sm-6 col-md-6  mb-2"
               style={{ width: '380px' }}
             >
               <div class="card">
@@ -42,7 +42,7 @@ const Skillmain = () => {
               </div>
             </div>
             <div
-              className=" col-sm-6 col-md-6 border border-dark mb-2"
+              className=" col-sm-6 col-md-6  mb-2"
               style={{ width: '380px' }}
             >
               <div class="card">
@@ -57,16 +57,16 @@ const Skillmain = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-6 col-md-6  border border-primary">
+        <div className="col-sm-6 col-md-6  ">
           <h2
             className="mb-2 "
             style={{ color: '#191825', fontFamily: 'cursive' }}
           >
             Experience
           </h2>
-          <div className="row border border-dark d-flex flex-column align-items-center pt-1 pb-1">
+          <div className="row  d-flex flex-column align-items-center pt-1 pb-1">
             <div
-              className=" col-sm-6 col-md-6 border border-dark mb-2"
+              className=" col-sm-6 col-md-6  mb-2"
               style={{ width: '380px' }}
             >
               <div class="card ">
@@ -86,7 +86,7 @@ const Skillmain = () => {
               </div>
             </div>
             <div
-              className=" col-sm-6 col-md-6 border border-dark mb-2"
+              className=" col-sm-6 col-md-6  mb-2"
               style={{ width: '380px' }}
             >
               <div class="card">
@@ -106,7 +106,7 @@ const Skillmain = () => {
               </div>
             </div>
             <div
-              className=" col-sm-6 col-md-6 border border-dark mb-2"
+              className=" col-sm-6 col-md-6  mb-2"
               style={{ width: '380px' }}
             >
               <div class="card">

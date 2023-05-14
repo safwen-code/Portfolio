@@ -6,7 +6,7 @@ const Description = () => {
       className=" container m-2  shadow  bg-body-tertiary rounded"
       id="description"
     >
-      <div className="row m-2 border border-dark  ">
+      <div className="row m-2   ">
         <h2 style={{ fontFamily: 'cursive' }}>About me</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
         <p className="fw-semibold">
@@ -16,14 +16,14 @@ const Description = () => {
           backend. Je suis spécialisée sur les frameworks React, php et nodejs.
         </p>
       </div>
-      <div className="row m-2 border border-dark">
+      <div className="row m-2 ">
         <h2 style={{ fontFamily: 'cursive' }}>what i do!</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
       </div>
 
       <div class="container mb-3">
-        <div class="row border border-dark">
-          <div class="col-sm-6 col-md-6  border border-dark">
+        <div class="row ">
+          <div class="col-sm-6 col-md-6  ">
             <div
               class="card mb-3 "
               style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
@@ -49,7 +49,7 @@ const Description = () => {
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6  border border-dark">
+          <div class="col-sm-6 col-md-6  ">
             <div
               class="card mb-3 "
               style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
@@ -76,7 +76,7 @@ const Description = () => {
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6  border border-dark">
+          <div class="col-sm-6 col-md-6  ">
             <div
               class="card mb-3 "
               style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}

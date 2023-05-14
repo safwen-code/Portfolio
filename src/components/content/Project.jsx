@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 const Project = () => {
   return (
-    <div className=" container m-2 border border-dark" id="project">
-      <div className="row m-2 border border-dark  ">
+    <div className=" container m-2 " id="project">
+      <div className="row m-2   ">
         <h2 style={{ fontFamily: 'cursive' }}>Projects</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
         <p className="lead">
@@ -14,14 +14,14 @@ const Project = () => {
           code.
         </p>
       </div>
-      <div className="row m-2 border border-dark">
+      <div className="row m-2 ">
         <h2 style={{ fontFamily: 'cursive' }}>Project I Done</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
       </div>
 
       <div class="container mb-3">
-        <div class="row border border-dark">
-          <div class="col-sm-6 col-md-6  border border-dark">
+        <div class="row ">
+          <div class="col-sm-6 col-md-6  ">
             <div
               class="card mb-3 "
               style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
@@ -46,7 +46,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6  border border-dark">
+          <div class="col-sm-6 col-md-6  ">
             <div
               class="card mb-3 "
               style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
@@ -71,7 +71,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6  border border-dark">
+          <div class="col-sm-6 col-md-6  ">
             <div
               class="card mb-3 "
               style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
