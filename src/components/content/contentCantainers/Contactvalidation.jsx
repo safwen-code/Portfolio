@@ -1,22 +1,35 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { connect } from 'react-redux'
+import emailjs from '@emailjs/browser'
 
-const Contactvalidation = ({ AddContact }) => {
+const Contactvalidation = () => {
   const [Contact, setContact] = useState({
     name: '',
     email: '',
     message: '',
   })
+  const contactRef = useRef()
   const { name, email, message } = Contact
-
   const onChangeHundler = (e) => {
     setContact({ ...Contact, [e.target.name]: e.target.value })
   }
 
   const submiContact = (e) => {
     e.preventDefault()
-    AddContact(Contact)
     console.log('contact', Contact)
+    console.log('contact ref', contactRef)
+    console.log(e.target)
+    let test = emailjs
+      .send('service_ctwp9zo', 'template_nf8js4z', Contact, 'MCWeJugFmMWwVfeiC')
+      .then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text)
+        },
+        function (err) {
+          console.log('FAILED...', err)
+        },
+      )
+    console.log(test)
   }
   return (
     <div className="col-sm border border-primary ">
