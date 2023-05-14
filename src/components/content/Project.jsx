@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <div className=" container m-2 border border-dark" id="project">
       <div className="row m-2 border border-dark  ">
-        <h2>Projects</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>Projects</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
         <p className="lead">
           Software Engineer with 3 years Computer Science degree and more than 2
@@ -15,7 +15,7 @@ const Project = () => {
         </p>
       </div>
       <div className="row m-2 border border-dark">
-        <h2>Project I Done</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>Project I Done</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
       </div>
 
