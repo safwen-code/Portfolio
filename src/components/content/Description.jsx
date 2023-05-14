@@ -7,18 +7,17 @@ const Description = () => {
       id="description"
     >
       <div className="row m-2 border border-dark  ">
-        <h2>About me</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>About me</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
-        <p className="lead">
-          I'm Creative Director and UI/UX Designer from Sydney, Australia,
-          working in web development and print media. I enjoy turning complex
-          problems into simple, beautiful and intuitive designs. My aim is to
-          bring across your message and identity in the most creative way. I
-          created web design for many famous brand companies.
+        <p className="fw-semibold">
+          Developpeur Full Stack passionnée par l’univer du web et dotée d’une
+          curiosité pour cette metier.Polyvalent et forte de 2 ans d’experience,
+          je me suis spécialisée dans le developpement frontend ansi que le
+          backend. Je suis spécialisée sur les frameworks React, php et nodejs.
         </p>
       </div>
       <div className="row m-2 border border-dark">
-        <h2>what i do!</h2>
+        <h2 style={{ fontFamily: 'cursive' }}>what i do!</h2>
         <hr class="  border border-info border-2 opacity-100 w-50 ms-4"></hr>
       </div>
 
@@ -26,8 +25,8 @@ const Description = () => {
         <div class="row border border-dark">
           <div class="col-sm-6 col-md-6  border border-dark">
             <div
-              class="card mb-3 text-bg-secondary"
-              style={{ max_width: '540px' }}
+              class="card mb-3 "
+              style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
             >
               <div class="row g-0">
                 <div class="col-md-4">
@@ -35,15 +34,14 @@ const Description = () => {
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">web developpement</h5>
+                    <h5 class="card-title">Web Developpement</h5>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      create apps in many domaine like education managment with
+                      react jquery css sass and more utils.
                     </p>
                     <p class="card-text">
                       <small class="text-body-secondary">
-                        Last updated 3 mins ago
+                        More than 3 years experience in this domaine
                       </small>
                     </p>
                   </div>
@@ -53,8 +51,8 @@ const Description = () => {
           </div>
           <div class="col-sm-6 col-md-6  border border-dark">
             <div
-              class="card mb-3 text-bg-secondary"
-              style={{ max_width: '540px' }}
+              class="card mb-3 "
+              style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
             >
               <div class="row g-0">
                 <div class="col-md-4">
@@ -62,15 +60,15 @@ const Description = () => {
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">web developpement</h5>
+                    <h5 class="card-title">backend developpment </h5>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      create Apis with node and php framewok using the concept
+                      of micro-service systéme
                     </p>
                     <p class="card-text">
                       <small class="text-body-secondary">
-                        Last updated 3 mins ago
+                        More of 2 years experience in this domaine "industry
+                        4.7"
                       </small>
                     </p>
                   </div>
@@ -80,8 +78,8 @@ const Description = () => {
           </div>
           <div class="col-sm-6 col-md-6  border border-dark">
             <div
-              class="card mb-3 text-bg-secondary"
-              style={{ max_width: '540px' }}
+              class="card mb-3 "
+              style={{ max_width: '540px', backgroundColor: '#ECF2FF' }}
             >
               <div class="row g-0">
                 <div class="col-md-4">
@@ -89,11 +87,10 @@ const Description = () => {
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">web developpement</h5>
+                    <h5 class="card-title">UI & Mangement</h5>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      create ui concept interface depend the concept of project
+                      management project with kanban srum and to do .
                     </p>
                     <p class="card-text">
                       <small class="text-body-secondary">
