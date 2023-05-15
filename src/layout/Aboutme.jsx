@@ -13,11 +13,25 @@ import birthday from '../images/birthday.png'
 import telecharger from '../images/telecharger.png'
 import Typewriter from 'typewriter-effect'
 
+import cvpdf from '../File/cv.pdf'
+import { saveAs } from 'file-saver'
+
 const Aboutme = () => {
   const styleimg = {
     width: '24px',
   }
 
+  const DownloadCV = () => {
+    fetch(cvpdf)
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Trigger the download using FileSaver.js
+        saveAs(blob, 'DS-FullStackDev.pdf')
+      })
+      .catch((error) => {
+        console.error('Error downloading the file:', error)
+      })
+  }
   return (
     <div className="col col-md-4  shadow-lg  rounded   ">
       <div className="col  mb-1 ">
@@ -118,6 +132,7 @@ const Aboutme = () => {
               type="button"
               class="btn  fw-semibold "
               style={{ backgroundColor: '#B6EAFA' }}
+              onClick={DownloadCV}
             >
               <img src={telecharger} alt="" style={styleimg} className="me-3" />
               Dawnload CV
