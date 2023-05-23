@@ -9,10 +9,12 @@ import {
 import { aboutmeData, projectData, skillData, compData } from './fakedata'
 //competance traitement
 export const aboutme = () => (dispatch) => {
-  dispatch({
-    type: ABOUT_ME,
-    payload: aboutmeData,
-  })
+  try {
+    dispatch({
+      type: ABOUT_ME,
+      payload: aboutmeData,
+    })
+  } catch (error) {}
 }
 export const projects = () => (dispatch) => {
   dispatch({
