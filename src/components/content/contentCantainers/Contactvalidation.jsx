@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { connect } from 'react-redux'
 import emailjs from '@emailjs/browser'
 
-const Contactvalidation = () => {
+const Contactvalidation = ({ contact }) => {
   const [Contact, setContact] = useState({
     name: '',
     email: '',
@@ -14,20 +14,22 @@ const Contactvalidation = () => {
     setContact({ ...Contact, [e.target.name]: e.target.value })
   }
 
-  const submiContact = (e) => {
+  const submiContact = async (e) => {
     e.preventDefault()
-
-    let test = emailjs
-      .send('service_ctwp9zo', 'template_nf8js4z', Contact, 'MCWeJugFmMWwVfeiC')
-      .then(
-        function (response) {
-          console.log('SUCCESS!', response.status, response.text)
-        },
-        function (err) {
-          console.log('FAILED...', err)
-        },
-      )
-    console.log(test)
+    //console.log(Contact)
+    let res = await contact(Contact)
+    console.log(res)
+    // let test = emailjs
+    //   .send('service_ctwp9zo', 'template_nf8js4z', Contact, 'MCWeJugFmMWwVfeiC')
+    //   .then(
+    //     function (response) {
+    //       console.log('SUCCESS!', response.status, response.text)
+    //     },
+    //     function (err) {
+    //       console.log('FAILED...', err)
+    //     },
+    //   )
+    // console.log(test)
   }
   return (
     <div className="col-sm">
