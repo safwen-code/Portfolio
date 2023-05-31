@@ -6,15 +6,24 @@ import {
   COMPETENCE,
   ADD_CONTACT,
 } from './types'
+import axios from 'axios'
 import { aboutmeData, projectData, skillData, compData } from './fakedata'
 //competance traitement
-export const aboutme = () => (dispatch) => {
+export const telecharger = async () => {
   try {
-    dispatch({
-      type: ABOUT_ME,
-      payload: aboutmeData,
-    })
-  } catch (error) {}
+    let res = await axios.get('/profile/file/')
+    return res.data
+  } catch (error) {
+    console.log(error)
+  }
+}
+export const aboutme = () => async (dispatch) => {
+  try {
+    let res = await axios.get('/profile/')
+    return res.data
+  } catch (error) {
+    console.log(error)
+  }
 }
 export const projects = () => (dispatch) => {
   dispatch({
@@ -28,11 +37,20 @@ export const skills = () => (dispatch) => {
     payload: skillData,
   })
 }
-export const contact = () => (dispatch) => {
-  dispatch({
-    type: CONTACT,
-    payload: 'contact',
-  })
+export const contact = (formData) => async (dispatch) => {
+  try {
+    //console.log(formData)
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+
+    let res = await axios.post('/profile/sendmail', formData, config)
+    return res.data
+  } catch (error) {
+    console.error(error.message)
+  }
 }
 
 export const competanceAction = () => (dispatch) => {
